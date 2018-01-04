@@ -1,0 +1,20 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<h2>My first token generator</h2>
+
+
+@using (Html.BeginForm("TokenChallenge", "home"))
+{
+
+    <input type="submit" value="Create" />
+
+}
+
+<div>
+    ID token:
+    <code style="word-wrap: break-word">
+        @ViewBag.idtoken
+    </code>
+</div>
